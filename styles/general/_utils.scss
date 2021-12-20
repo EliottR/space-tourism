@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+//FONTS
+@mixin bellefair-150 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+@mixin bellefair-100 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@mixin bellefair-56 {
+    font-family: 'Bellefair', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@mixin bellefair-32 {
+    font-family: 'Bellefair', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@mixin bellefair-28 {
+    font-family: 'Bellefair', serif;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@mixin barlow-28{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4.75px;
+}
+
+@mixin barlow-18{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+@mixin barlow-16{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+}
+
+@mixin barlow-14{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.35px;
+}
+
+//functions
+@mixin wh($width, $height: $width){
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,32 @@
+.header{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    backdrop-filter: blur(2px);
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 2rem;
+        background-color: red;
+        counter-reset: item;
+        list-style-type: none;
+        height: 100vh;
+        padding-top: 5rem;
+        box-sizing: border-box;
+        display: none;
+
+        &__tab {
+            display: block;
+            text-transform: uppercase;
+
+            &:before {
+                content: "0"counter(item); 
+                counter-increment: item;
+                font-weight: bolder;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
